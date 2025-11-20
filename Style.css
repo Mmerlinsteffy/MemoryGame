@@ -1,0 +1,61 @@
+body{
+ background: linear-gradient(
+  135deg,
+  violet ,
+   magenta ,
+  indigo 
+);
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    font-size: 70px;
+}
+ .parent{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    justify-self: center;
+    max-width: 900px;
+    margin: 70px ;  
+}
+.item{
+    background-color: white;
+    height: 150px;
+    border-radius: 20px;  
+    width: 250px;
+}
+.item img {
+     max-width: 90%; /* to reduce the width of image */
+     max-height: 90%;  /* to keep the height of image  within the div*/ 
+    object-fit: contain; /* to fit inside the box without resizing*/
+    display: block;
+    margin: auto;  /*to center the image*/     
+}
+a img {
+    visibility: hidden;
+}
+
+a:hover img {
+    visibility: visible;
+}
+
+.apl:hover {
+     background-color: red;
+     } 
+     .bana:hover{
+        background-color: yellow;
+     }
+     .lime:hover{
+        background-color:  goldenrod;
+     }
+     .mang:hover{
+        background-color: rgb(140, 184, 36);
+     }
+     .pear:hover{
+        background-color: orangered;
+     }
+     .melon:hover{
+        background-color: greenyellow;
+     }
